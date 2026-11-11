@@ -1,0 +1,20 @@
+[project]
+name = "fastapi-blog"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "dungTudonghoa", email = "contuetinh@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi[standard]>=0.143.2",
+    "jinja2>=3.1.6",
+]
+
+[project.scripts]
+fastapi-blog = "fastapi_blog:main"
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
